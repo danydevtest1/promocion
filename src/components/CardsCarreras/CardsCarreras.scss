@@ -1,0 +1,49 @@
+.card {
+  width: 90%;
+  height: 80%;
+  align-items: center;
+  padding-top: 2px;
+
+
+  img {
+    width: 280px;
+    height: 220px;
+   
+  }
+.overflow{
+    overflow: hidden;
+}
+
+.buti{
+    display: flex;
+    padding: 2px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.card-img-top{
+    transition: all 0.3s ease-in-out !important;
+      }
+ .card-img-top:hover{
+transform: scale(1.8) !important;
+  }
+
+ body {
+    padding: 2rem 0;
+    
+  }
+  p {
+    padding: 0.3rem 1rem !important;
+    font-size: 1rem;
+  }
+}
+.card:hover {
+  box-shadow: 5px 10px 20px 1px rgba(255, 255, 255, 0.27);
+  transition: all 0.7s linear;
+}
+.fnd{
+    background: rgb(34, 33, 33) !important;
+}

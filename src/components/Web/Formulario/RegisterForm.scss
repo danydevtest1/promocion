@@ -1,0 +1,39 @@
+.containerform{
+    background: rgba(255,255,255,0.2);
+    border-radius: 5px;
+    backdrop-filter: blur(1px);
+    width: 70%;
+
+      h3{
+        color:rgb(255,255,255) !important;
+        font-size: 20px;
+       
+    }
+
+    .form-control{
+        background: rgba(249,249,250,0.1);
+        background-color:transparent!important;
+        color: rgb(255, 255,255) !important;
+       
+    }
+    .form-select{
+        background: rgba(249,249,250,0.1);
+        background-color: transparent !important;
+        color: rgb(255, 255,255);
+               
+        option{
+            background: rgba(249,249,250,0.1);
+            font-weight:lighter !important;
+            background-color: transparent !important;
+            opacity: 0.4;
+            color: rgb(40, 38, 38);
+            display: inline;
+        } 
+    }
+  
+   
+  
+    ::placeholder{
+        color:rgb(255, 255,255) !important;
+    }
+}
