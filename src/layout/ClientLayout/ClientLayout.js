@@ -1,32 +1,40 @@
 import React from "react";
-import { Container } from "react-bootstrap";
-import {} from "../../components/Web"
-import {TopBar, Footer} from '../../components/Web';
+import { Container, Row, Col } from "react-bootstrap";
+import { TopBar, Footer } from "../../components/Web";
 
 import "./ClientLayout.scss";
 export function ClientLayout({ children }) {
   return (
     <div className="client-layout">
-      <div className="client-layout__header">
-       <TopBar/>
-      </div>
-      {children}
+      <Container>
+        <Row>
+          <Col xs={12}>
+            <div className="client-layout__header">
+              <TopBar />
+            </div>
+          </Col>
+        </Row>
 
-      <div className="client-layout__footer">
-        <Container>
-         <Footer.Info/>
-         <Footer.Menu/>
-         <Footer.Newsletter/>
-          </Container>
-          <Container>
-          <span>ALL RIGHTS RESERVADO</span>
-          <span>Dany cambrano arcos</span>
-          </Container>
-        
-     
-       
-       
-      </div>
+        <Row>
+          <Col xs={12}>{children}</Col>
+        </Row>
+
+        <Row>
+          <Col xs={12}>
+            <div className="client-layout__footer">
+              <Container>
+                <Footer.Info />
+                <Footer.Menu />
+                <Footer.Newsletter />
+              </Container>
+              <Container>
+                <span>ALL RIGHTS RESERVADO</span>
+                <span>Dany cambrano arcos</span>
+              </Container>
+            </div>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }

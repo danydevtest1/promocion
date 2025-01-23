@@ -9,7 +9,7 @@ export function RegisterForm() {
       <Form>
         <Container>
           <Row className="mb-3">
-            <Col xs={6}>
+            <Col xs={6} md={4}>
               <h3>
                 <em>Datos personales</em>
               </h3>
@@ -35,7 +35,7 @@ export function RegisterForm() {
                 />
               </Form.Group>
             </Col>
-            <Col xs={6}>
+            <Col xs={6} md={4} >
               <h3>
                 <em>Escuela de procedencia</em>
               </h3>

@@ -12,7 +12,10 @@ export function Banner() {
             <h1>
               <em>¡¡Registráte y sé parte de esta comunidad!!</em>
             </h1>
-
+          </Col>
+        </Row>
+        <Row>
+          <Col>
             <RegisterForm />
           </Col>
         </Row>
