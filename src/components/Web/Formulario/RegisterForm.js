@@ -103,7 +103,7 @@ export function RegisterForm() {
                 <Form.Control type="email" placeholder="ejemplo@gru.com" />
               </Form.Group>
             </Col>
-            <div className="d-grid gap-2 p-2">
+            <div className="d-grid gap-2 p-4">
               <Button variant="danger" size="md">
                 Enviar
               </Button>

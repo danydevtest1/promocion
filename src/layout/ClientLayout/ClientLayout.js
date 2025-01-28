@@ -24,8 +24,6 @@ export function ClientLayout({ children }) {
             <div className="client-layout__footer">
               <Container>
                 <Footer.Info />
-                <Footer.Menu />
-                <Footer.Newsletter />
               </Container>
               <Container>
                 <span>ALL RIGHTS RESERVADO</span>

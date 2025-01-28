@@ -1,0 +1,74 @@
+@import "~/src/scss/index.scss";
+
+.card-container {
+  box-sizing: border-box;
+  background-color: $background-dark-web;
+  width: 100%;
+  height: auto;
+  display: flex;
+
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px rgba(31, 31, 31, 0.1);
+  display: flex;
+  margin: auto;
+
+
+  &__image-container {
+    background-color: $background-dark-web;
+    width: 40%;
+
+    > img {
+      width: 80%;
+      height: auto;
+      border-radius: 50%;
+    }
+  }
+  &__text-container {
+    background-color: $background-dark-web;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 2px;
+    text-align: center;
+
+    > .text {
+      text-align: center;
+      padding: 5px;
+      > h2 {
+        font-size: 15px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      }
+      > p {
+        font-size: 10px;
+        opacity: 0.6;
+        text-align: center;
+      }
+    }
+
+    > .but {
+      width: 10%;
+      padding: auto;
+
+      > button {
+        width: auto;
+        height: auto;
+        vertical-align: top;
+        align-items: center;
+        //background-color: #d8cece;
+        border-radius: 30%;
+        text-align: center;
+        > :hover{
+            background-color: transparent;
+        }
+        i {
+          display: flex;
+          align-items: center;
+          text-align: center;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

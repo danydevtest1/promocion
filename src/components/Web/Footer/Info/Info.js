@@ -7,15 +7,7 @@ import "./Info.scss";
 export function Info() {
   return (
     <div className="footer-info">
-      <icon.LogoWhite className="logo" />
-      <p>
-        Ofrecer servicios con calidad en educación superior tecnológica,
-        mediante un modelo educativo integral que permita el desarrollo de
-        competencias profesionales, con amplia capacidad para generar
-        investigación, innovar la tecnología y la formación de profesionistas de
-        alto nivel académico, con un sentido de pertinencia y superación
-        continua.
-      </p>
+     <h1><em>Sigue nuestras redes sociales</em></h1>
       <div className="d-flex gap-2 mb-2">
       <Button variant="primary" as="a">
         <i class="bi bi-facebook"></i>

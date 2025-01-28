@@ -19,4 +19,24 @@ export const Carreras = [
     informacion:
       "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.",
       imagen: imagenes.administracion,
-  }]
+  },
+  {
+    id: "1",
+     nombre: "Ingeniería En Sistemas",
+    informacion: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.",
+    imagen: imagenes.sistemas,
+  },
+  {
+    id: "2",
+    nombre: "Ingeniería Bioquímica",
+    informacion: "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.",
+    imagen: imagenes.bioquimica,
+  },
+  {
+    id: "3",
+    nombre: "Lic. en Administración",
+    informacion:
+      "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.",
+      imagen: imagenes.administracion,
+  }
+]

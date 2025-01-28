@@ -1,15 +1,13 @@
 @import "~/src/scss/index.scss";
 
 .footer-info{
-    width: 33.33%;
+    width: 100%;
     color: $text-light;
-
-    .logo{
-        width: 100px;
-    }
-    p{
+    display: flex;
+    justify-content: space-between;
+    h1{
         opacity: 0.4;
-        margin: 20px 0;
+       font-size: 100%;
     }
 
   
