@@ -14,15 +14,15 @@ export function CarrerasItem(props) {
       </div>
       <div className="card-container__text-container">
         <div className="text">
-          <h2>{carrera}</h2>
+          <h2><em>{carrera}</em></h2>
 
           <p>
-            {informacion}
+           <em>{informacion}</em> 
           </p>
         </div>
         <div className="but">
           <Button variant="link">
-          <i class="bi bi-grid-fill"></i>
+          <i class="bi bi-eye"></i>
           </Button>
         </div>
       </div>

@@ -12,19 +12,21 @@
   display: flex;
   margin: auto;
 
-
   &__image-container {
-    background-color: $background-dark-web;
-    width: 40%;
-
+    //background-color: $background-dark-web;
+    width: 30%;
+    height: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
     > img {
-      width: 80%;
-      height: auto;
+      width: 100%;
+      height: 60%;
       border-radius: 50%;
     }
   }
   &__text-container {
-    background-color: $background-dark-web;
+    //background-color: $background-dark-web;
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -32,16 +34,19 @@
     text-align: center;
 
     > .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       text-align: center;
       padding: 5px;
       > h2 {
-        font-size: 15px;
+        font-size: 16px;
         text-align: center;
         display: flex;
         justify-content: center;
       }
       > p {
-        font-size: 10px;
+        font-size: 14px;
         opacity: 0.6;
         text-align: center;
       }
@@ -50,23 +55,45 @@
     > .but {
       width: 10%;
       padding: auto;
-
+      background-color: $background-dark-web;
+      transition: all 0.5s ease;
+      :hover{
+        color: #434343;
+      }
       > button {
         width: auto;
         height: auto;
         vertical-align: top;
         align-items: center;
-        //background-color: #d8cece;
-        border-radius: 30%;
+       //background-color: #3b3a3a;
+        border-radius: 50%;
         text-align: center;
-        > :hover{
-            background-color: transparent;
-        }
+        justify-content: space-between;
+        text-decoration: none;
+        :hover{
+            color: #19152e;
+            background-color: #4855e5;
+            transition: all 0.3s ease-in-out;
+            &::before{
+                width: 100%;
+            }
+          }
+        
         i {
+            width: 100%;
+            height: auto;
+          color: #1b1b1c;
           display: flex;
           align-items: center;
           text-align: center;
-          font-size: 18px;
+          font-size: 1.8rem;
+          cursor: pointer;
+          background: #e4e8eb;
+         border-radius: 60%;
+         :hover {
+          color: #11d932;
+          transition: all 0.1s ease-in-out;
+          }
         }
       }
     }
