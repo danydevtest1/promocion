@@ -1,9 +1,9 @@
 import React from "react";
-import { Container, Button, Image } from "react-bootstrap";
+import { Container,  Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { map } from "lodash";
+
 import { imagenes } from "../../../assets";
-import { socialData } from "../../../utils";
+
 
 import "./TopBar.scss";
 

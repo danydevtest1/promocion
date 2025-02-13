@@ -1,0 +1,92 @@
+.form {
+  color: white;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  backdrop-filter: blur(1px);
+  width: 100%;
+
+  > h2 {
+    color: rgb(255, 255, 255) !important;
+    font-size: 17px;
+    font-weight: bold;
+    padding-top: 3px;
+  }
+
+  &__carrera{
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+    .css-b62m3t-container {
+        padding-top: 5px;
+        .css-13cymwt-control {
+          background-color: rgba(238, 215, 215, 0);
+          font-size: 12px;
+          height: 10px;
+          text-align: left;
+          align-content: center;
+          .css-19bb58m {
+            color: white;
+            align-items: center;
+          }
+  
+          .css-19bb58m {
+            font-size: 20px;
+            color: white;
+          
+          }
+        }
+      }
+  }
+
+  &__select {
+    width: 100%;
+    padding-top: 1px;
+    padding: 0px 10px 0px 10px;
+    .css-b62m3t-container {
+      padding-top: 5px;
+      .css-13cymwt-control {
+        background-color: rgba(238, 215, 215, 0);
+        font-size: 12px;
+        height: 10px;
+        text-align: left;
+        align-content: center;
+        .css-19bb58m {
+          color: white;
+          align-items: center;
+        }
+
+        .css-19bb58m {
+          font-size: 20px;
+          color: white;
+        
+        }
+      }
+    }
+  }
+
+  &__input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 2px 10px;
+    .form-control {
+        background-color: rgba(249, 249, 250, 0.1);
+        color: white;
+        font-size: 15px;
+      }
+      >div{
+        padding-top: 5px;
+        .btn{
+        width: 100%;
+        }
+      }
+      
+          ::placeholder{
+            color:rgb(255, 255,255) !important;
+            font-size: 12px;
+        }
+   
+  }
+}

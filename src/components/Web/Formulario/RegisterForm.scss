@@ -1,8 +1,38 @@
 .containerform{
     background: rgba(255,255,255,0.2);
-    border-radius: 5px;
+    border-radius: 10px;
     backdrop-filter: blur(1px);
     width: 100%;
+
+     form{
+       container{
+           row{
+               col{
+                    & .selected{
+                        width: 100%;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+    .css-1xc3v61-indicatorContainer{
+        color: #fff;
+
+        
+    .css-1xc3v61-indicatorContainer:hover{
+        color: #fff;
+    }
+    }
+
+    img, svg {
+        vertical-align:bottom;
+    }
+
+    .css-1adq9ba-control{
+        background-color: rgb(255,255,255,0);
+    }
 
       h3{
         color:rgb(255,255,255) !important;
@@ -13,7 +43,7 @@
         background: rgba(249,249,250,0.1);
         background-color:transparent!important;
         color: rgb(255, 255,255) !important;
-        font-size: 10px;
+        font-size: 14px;
        
     }
     .form-select{

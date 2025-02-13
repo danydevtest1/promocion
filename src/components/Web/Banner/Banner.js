@@ -1,6 +1,6 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import { RegisterForm } from "../Formulario";
+import { Container, Row} from "react-bootstrap";
+import { Formu } from "../Formulario";
 import "./Banner.scss";
 
 export function Banner() {
@@ -8,16 +8,8 @@ export function Banner() {
     <div className="banner">
       <Container>
         <Row>
-          <Col>
-            <h1>
-              <em>¡¡Registráte y sé parte de esta comunidad!!</em>
-            </h1>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <RegisterForm />
-          </Col>
+          <h3><em>¡¡¡Registráte y sé parte de esta comunidad!!!</em></h3>
+          <Formu />
         </Row>
       </Container>
 

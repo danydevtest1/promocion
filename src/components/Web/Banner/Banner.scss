@@ -28,16 +28,17 @@
 
     h1{
         color: $text-light;
-        font-size: 30px;
+        font-size: 100%;
         line-height: 55px;
         z-index: 1;
         font-weight: lighter;
     }
 
-    h2{
-        color: $text-light;
-        font-size: 22px;
-        font-weight: 100;
+    h3{
+        text-align: center;
+        color: #f63e50;
+        font-size: 1.5rem;
+        font-weight: bold;
         z-index: 1;
     }
 }

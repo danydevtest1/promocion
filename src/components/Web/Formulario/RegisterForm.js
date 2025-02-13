@@ -1,7 +1,69 @@
 import React from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import Select from "react-select";
 
 import "./RegisterForm.scss";
+
+const carreras = [
+  {
+    value: "1",
+    label: "Ingenieria en Sistemas Computacionales",
+  },
+  {
+    value: "2",
+    label: "Ingenieria Civil",
+  },
+  {
+    value: "3",
+    label: "Ingenieria Ambiental",
+  },
+  {
+    value: "4",
+    label: "Ingenieria Bioquimica",
+  },
+];
+
+const style = {
+  control: (styles) => {
+    console.log(styles);
+    
+    return {
+      ...styles,
+      backgroundColor: "rgba(255,255,255,0.2);",
+      borderWidth:1,
+      borderColor:"white",
+      boxShadow:0,
+      minHeight:5
+    };
+  },
+  placeholder: (styles) => {
+    return {
+      ...styles,
+      color: "white",
+    };
+  },
+  option: (styles) => {
+    return {
+      ...styles,
+      backgroundColor: "none",
+      color: "black",
+      fontSize: "10px",
+    };
+  },
+  values: (styles) => {
+    return {
+      ...styles,
+      color: "red",
+    };
+  },
+  singleValue:(styles)=>{
+    return{
+      ...styles,
+      color:"white",
+      fontSize:"10px"
+    }
+  }
+};
 
 export function RegisterForm() {
   return (
@@ -17,30 +79,7 @@ export function RegisterForm() {
                 className="mb-3 bg-opacity-10"
                 controlId="formGroupEmail"
               >
-                <Form.Select>
-                  <option>Escuela</option>
-                  <option value="1">EMSAD 32</option>
-                  <option value="2">CBTA 265</option>
-                  <option value="3">COBATAB 08</option>
-                  <option value="1">EMSAD 32</option>
-                  <option value="2">CBTA 265</option>
-                  <option value="3">COBATAB 08</option>
-                  <option value="1">EMSAD 32</option>
-                  <option value="2">CBTA 265</option>
-                  <option value="3">COBATAB 08</option>
-                  <option value="1">EMSAD 32</option>
-                  <option value="2">CBTA 265</option>
-                  <option value="3">COBATAB 08</option>
-                  <option value="1">EMSAD 32</option>
-                  <option value="2">CBTA 265</option>
-                  <option value="3">COBATAB 08</option>
-                  <option value="1">EMSAD 32</option>
-                  <option value="2">CBTA 265</option>
-                  <option value="3">COBATAB 08</option>
-                  <option value="1">EMSAD 32</option>
-                  <option value="2">CBTA 265</option>
-                  <option value="3">COBATAB 08</option>
-                </Form.Select>
+                <Select styles={style}/>
               </Form.Group>
               <Form.Group className="mb-3">
                 <Form.Control type="email" placeholder="Localidad" />
@@ -72,32 +111,22 @@ export function RegisterForm() {
               <h3>
                 <em>Carrera</em>
               </h3>
-              <Form.Select>
-                <option>Carrera</option>
-                <option value="1">Ing. En Sistemas Computacionales</option>
-                <option value="2">Ing. Bioquímica</option>
-                <option value="3">Ing. Industrial</option>
-                <option value="3">Ing. Ambiental</option>
-                <option value="3">Ing. Civil</option>
-                <option value="3">Ing. Electromecánica</option>
-                <option value="3">Lic. En Administración</option>
-              </Form.Select>
+              <div className="selected">
+                <Select options={carreras} styles={style} />
+              </div>
             </Col>
             <Col xs={6}>
               <h3>
                 <em>Datos personales</em>
               </h3>
               <Form.Group className="mb-3" controlId="formGroupEmail">
-                <Form.Control type="text" placeholder="Nombre completo" />
+                <Form.Control type="text" placeholder="Nombre" />
               </Form.Group>
               <Form.Group className="mb-3" controlId="formGroupEmail">
                 <Form.Control type="text" placeholder="Apellidos" />
               </Form.Group>
               <Form.Group className="mb-3" controlId="formGroupEmail">
-                <Form.Control
-                  type="text"
-                  placeholder="934-12-27-344"
-                />
+                <Form.Control type="text" placeholder="934-12-27-344" />
               </Form.Group>
               <Form.Group className="mb-3" controlId="formGroupEmail">
                 <Form.Control type="email" placeholder="ejemplo@gru.com" />
